@@ -2,11 +2,12 @@
 <html lang="hu">
 
 <head>
-    <link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-<link rel="shortcut icon" href="./favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
-<link rel="manifest" href="./site.webmanifest" />
+
+    <link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="manifest" href="./site.webmanifest">
 
     <meta charset="UTF-8">
 
@@ -15,7 +16,7 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>Macsesz - Letölthető képek</title>
+    <title>Macsesz - Channel</title>
 
 
     <style>
@@ -87,7 +88,6 @@
 
             cursor: pointer;
         }
-
 
         .menu-button span {
             width: 32px;
@@ -163,21 +163,17 @@
             z-index: 999;
         }
 
-
         .side-menu.active {
             transform: translateX(0);
         }
-
 
         .side-menu ul {
             list-style: none;
         }
 
-
         .side-menu li {
             margin-bottom: 10px;
         }
-
 
         .side-menu a {
             display: block;
@@ -194,7 +190,6 @@
                 background 0.25s ease,
                 padding-left 0.25s ease;
         }
-
 
         .side-menu a:hover {
             background: #333;
@@ -227,7 +222,6 @@
 
             z-index: 998;
         }
-
 
         .overlay.active {
             opacity: 1;
@@ -271,14 +265,12 @@
             color: white;
         }
 
-
         .hero-content {
             max-width: 850px;
 
             animation:
                 heroAppear 1s ease forwards;
         }
-
 
         .hero h1 {
             font-size:
@@ -287,7 +279,6 @@
             margin-bottom: 25px;
         }
 
-
         .hero p {
             font-size: 20px;
 
@@ -295,7 +286,6 @@
 
             color: #ddd;
         }
-
 
         @keyframes heroAppear {
 
@@ -324,11 +314,6 @@
             padding: 100px 30px;
         }
 
-
-        /* ========================================
-           LETÖLTHETŐ KÉPEK FEJLÉC
-        ======================================== */
-
         .downloads-header {
             max-width: 900px;
 
@@ -337,13 +322,11 @@
             text-align: center;
         }
 
-
         .downloads-header h2 {
             font-size: 42px;
 
             margin-bottom: 20px;
         }
-
 
         .downloads-header p {
             font-size: 18px;
@@ -355,7 +338,7 @@
 
 
         /* ========================================
-           SZÖVEGEK LASSÚ MEGJELENÉSE
+           LASSÚ MEGJELENÉS
         ======================================== */
 
         .fade-text {
@@ -369,7 +352,6 @@
                 transform 1.2s ease;
         }
 
-
         .fade-text.show {
             opacity: 1;
 
@@ -377,15 +359,9 @@
                 translateY(0);
         }
 
-
-        /* Cím */
-
         .downloads-header h2.fade-text {
             transition-delay: 0s;
         }
-
-
-        /* Leírás */
 
         .downloads-header p.fade-text {
             transition-delay: 0.25s;
@@ -407,11 +383,6 @@
 
             gap: 40px;
         }
-
-
-        /* ========================================
-           EGY KÁRTYA
-        ======================================== */
 
         .card {
             width: 100%;
@@ -447,22 +418,12 @@
                 box-shadow 0.3s ease;
         }
 
-
-        /* ========================================
-           MEGJELENT KÁRTYA
-        ======================================== */
-
         .card.show {
             opacity: 1;
 
             transform:
                 translateY(0);
         }
-
-
-        /* ========================================
-           KÁRTYÁK KÉSLELTETÉSE
-        ======================================== */
 
         .card:nth-child(1) {
             transition-delay: 0s;
@@ -491,11 +452,6 @@
         .card:nth-child(7) {
             transition-delay: 0.9s;
         }
-
-
-        /* ========================================
-           KÁRTYA HOVER
-        ======================================== */
 
         .card:hover {
             box-shadow:
@@ -536,13 +492,11 @@
             min-width: 0;
         }
 
-
         .card h3 {
             font-size: 30px;
 
             margin-bottom: 15px;
         }
-
 
         .card p {
             font-size: 17px;
@@ -590,7 +544,6 @@
                 box-shadow 0.2s ease;
         }
 
-
         .download-button:hover {
             background: #16a34a;
 
@@ -602,15 +555,122 @@
                 rgba(34, 197, 94, 0.35);
         }
 
-
         .download-button:active {
             transform:
                 translateY(0);
         }
 
-
         .download-icon {
             font-size: 19px;
+        }
+
+
+        /* ========================================
+           CHANNEL
+        ======================================== */
+
+        .channel-section {
+    padding: 100px 30px;
+    background: #181818;
+    text-align: center;
+    color: white;
+}
+        .channel-container {
+            max-width: 900px;
+
+            margin: 0 auto;
+        }
+
+        .channel-container h2 {
+            font-size: 42px;
+
+            margin-bottom: 20px;
+        }
+
+        .channel-container > p {
+    font-size: 18px;
+    color: #ddd;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+ .channel-card {
+    display: block;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 30px;
+
+    background: rgb(234, 234, 234);
+    color: #222;
+
+    border-radius: 20px;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 8px 30px
+        rgba(0, 0, 0, 0.3);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+        .channel-card:hover {
+            transform:
+                translateY(-8px);
+
+            box-shadow:
+                0 18px 45px
+                rgba(0, 0, 0, 0.18);
+        }
+
+        .channel-image {
+            width: 100%;
+
+            max-width: 600px;
+
+            height: 300px;
+
+            object-fit: contain;
+
+            border-radius: 15px;
+
+            background: #d3ddfe;
+
+            margin-bottom: 25px;
+        }
+
+        .channel-card h3 {
+            font-size: 32px;
+
+            margin-bottom: 15px;
+        }
+
+        .channel-card p {
+            font-size: 18px;
+
+            color: #666;
+
+            line-height: 1.6;
+
+            margin-bottom: 25px;
+        }
+
+        .channel-button {
+            display: inline-block;
+
+            padding: 14px 28px;
+
+            background: #ff0000;
+
+            color: white;
+
+            border-radius: 9px;
+
+            font-weight: bold;
+
+            font-size: 16px;
         }
 
 
@@ -644,13 +704,11 @@
             padding: 50px 30px;
         }
 
-
         .contact h1 {
             font-size: 42px;
 
             margin-bottom: 20px;
         }
-
 
         .contact h4 {
             font-size: 20px;
@@ -660,11 +718,68 @@
             color: #ccc;
         }
 
-
         .contact h3 {
             font-size: 25px;
 
             color: white;
+
+            margin-bottom: 25px;
+        }
+
+
+        /* ========================================
+           EMAIL MÁSOLÁS
+        ======================================== */
+
+        .copy-box {
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 12px;
+
+            background: #222;
+
+            color: white;
+
+            padding: 12px 16px;
+
+            border-radius: 10px;
+
+            font-size: 18px;
+        }
+
+        .copy-button {
+            border: none;
+
+            background: #333;
+
+            color: white;
+
+            width: 40px;
+            height: 40px;
+
+            border-radius: 8px;
+
+            cursor: pointer;
+
+            font-size: 18px;
+
+            transition:
+                background 0.2s ease,
+                transform 0.2s ease;
+        }
+
+        .copy-button:hover {
+            background: #444;
+
+            transform:
+                scale(1.05);
+        }
+
+        .copy-button:active {
+            transform:
+                scale(0.95);
         }
 
 
@@ -678,18 +793,15 @@
                 gap: 25px;
             }
 
-
             .image-preview {
                 width: 270px;
 
                 height: 210px;
             }
 
-
             .card h3 {
                 font-size: 27px;
             }
-
 
             .download-button {
                 padding: 13px 18px;
@@ -708,13 +820,11 @@
                 height: 60px;
             }
 
-
             .menu-button {
                 width: 60px;
 
                 height: 60px;
             }
-
 
             .side-menu {
                 top: 60px;
@@ -723,7 +833,6 @@
                     calc(100vh - 60px);
             }
 
-
             .overlay {
                 top: 60px;
 
@@ -731,11 +840,9 @@
                     calc(100vh - 60px);
             }
 
-
             main {
                 padding-top: 60px;
             }
-
 
             .hero {
                 min-height: 550px;
@@ -743,28 +850,21 @@
                 padding: 30px 20px;
             }
 
-
             .hero p {
                 font-size: 17px;
             }
-
 
             .downloads-section {
                 padding: 70px 20px;
             }
 
-
             .downloads-header h2 {
                 font-size: 34px;
             }
 
-
             .downloads-header p {
                 font-size: 16px;
             }
-
-
-            /* Kártya mobilon */
 
             .card {
                 min-height: 0;
@@ -778,9 +878,6 @@
                 gap: 22px;
             }
 
-
-            /* Kép mobilon */
-
             .image-preview {
                 width: 100%;
 
@@ -791,23 +888,53 @@
                 order: -1;
             }
 
-
             .card h3 {
                 font-size: 25px;
             }
-
 
             .card p {
                 font-size: 16px;
             }
 
-
-            /* Teljes szélességű gomb */
-
             .download-button {
                 width: 100%;
             }
 
+            /* CHANNEL MOBIL */
+
+            .channel-section {
+                padding: 70px 20px;
+            }
+
+            .channel-container h2 {
+                font-size: 34px;
+            }
+
+            .channel-container > p {
+                font-size: 16px;
+            }
+
+            .channel-card {
+                padding: 20px;
+            }
+
+            .channel-image {
+                height: 240px;
+            }
+
+            .channel-card h3 {
+                font-size: 27px;
+            }
+
+            .channel-card p {
+                font-size: 16px;
+            }
+
+            .channel-button {
+                width: 100%;
+
+                display: block;
+            }
 
             .contact h1 {
                 font-size: 34px;
@@ -826,19 +953,20 @@
                 font-size: 48px;
             }
 
-
             .downloads-header h2 {
                 font-size: 30px;
             }
-
 
             .card {
                 padding: 20px;
             }
 
-
             .image-preview {
                 height: 240px;
+            }
+
+            .channel-image {
+                height: 200px;
             }
 
         }
@@ -858,56 +986,13 @@
             *::before,
             *::after {
                 animation-duration: 0.01ms !important;
+
                 animation-iteration-count: 1 !important;
+
                 transition-duration: 0.01ms !important;
             }
 
         }
-        /* ========================================
-           copy */
-           .copy-box {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-
-    background: #222;
-    color: white;
-
-    padding: 12px 16px;
-
-    border-radius: 10px;
-
-    font-size: 18px;
-}
-
-.copy-button {
-    border: none;
-    background: #333;
-
-    color: white;
-
-    width: 40px;
-    height: 40px;
-
-    border-radius: 8px;
-
-    cursor: pointer;
-
-    font-size: 18px;
-
-    transition:
-        background 0.2s ease,
-        transform 0.2s ease;
-}
-
-.copy-button:hover {
-    background: #444;
-    transform: scale(1.05);
-}
-
-.copy-button:active {
-    transform: scale(0.95);
-}
 
     </style>
 
@@ -955,6 +1040,8 @@
 
         <ul>
 
+            <!-- 1. FŐOLDAL -->
+
             <li>
                 <a href="#fooldal">
                     Főoldal
@@ -962,12 +1049,25 @@
             </li>
 
 
+            <!-- 2. LETÖLTHETŐ KÉPEK -->
+
             <li>
                 <a href="#kepek">
                     Letölthető képek
                 </a>
             </li>
 
+
+            <!-- 3. CHANNEL -->
+
+            <li>
+                <a href="#channel">
+                    Channel
+                </a>
+            </li>
+
+
+            <!-- 4. KAPCSOLAT -->
 
             <li>
                 <a href="#kapcsolat">
@@ -1012,7 +1112,6 @@
                     Macsesz
                 </h1>
 
-
                 <p>
                     Az igazi YouTube channel
                 </p>
@@ -1031,15 +1130,11 @@
             id="kepek"
         >
 
-
-            <!-- FEJLÉC -->
-
             <div class="downloads-header">
 
                 <h2 class="fade-text">
                     Letölthető képeink
                 </h2>
-
 
                 <p class="fade-text">
                     Töltsd le kedvenc képeinket
@@ -1049,16 +1144,12 @@
             </div>
 
 
-            <!-- =================================
-                 KÁRTYÁK
-            ================================== -->
+            <!-- KÁRTYÁK -->
 
             <div class="cards">
 
 
-                <!-- =================================
-                     1. KÉP
-                ================================== -->
+                <!-- 1. KÉP -->
 
                 <div class="card">
 
@@ -1068,13 +1159,11 @@
                         alt="Letölthető kép 1"
                     >
 
-
                     <div class="card-content">
 
                         <h3>
                             Macsesz fej rajzolt
                         </h3>
-
 
                         <p>
                             Töltsd le Macsesz PRO-n
@@ -1082,7 +1171,6 @@
                         </p>
 
                     </div>
-
 
                     <a
                         class="download-button"
@@ -1101,9 +1189,7 @@
                 </div>
 
 
-                <!-- =================================
-                     2. KÉP
-                ================================== -->
+                <!-- 2. KÉP -->
 
                 <div class="card">
 
@@ -1113,13 +1199,11 @@
                         alt="Letölthető kép 2"
                     >
 
-
                     <div class="card-content">
 
                         <h3>
                             Macsesz viszi a pálmát
                         </h3>
-
 
                         <p>
                             Macsesz, a fantasztikus DJ,
@@ -1128,7 +1212,6 @@
                         </p>
 
                     </div>
-
 
                     <a
                         class="download-button"
@@ -1147,9 +1230,7 @@
                 </div>
 
 
-                <!-- =================================
-                     3. KÉP
-                ================================== -->
+                <!-- 3. KÉP -->
 
                 <div class="card">
 
@@ -1159,13 +1240,11 @@
                         alt="Letölthető kép 3"
                     >
 
-
                     <div class="card-content">
 
                         <h3>
                             Macsesz, az igaz DJ
                         </h3>
-
 
                         <p>
                             Megint itt az igazi DJ,
@@ -1174,7 +1253,6 @@
                         </p>
 
                     </div>
-
 
                     <a
                         class="download-button"
@@ -1193,9 +1271,7 @@
                 </div>
 
 
-                <!-- =================================
-                     4. KÉP
-                ================================== -->
+                <!-- 4. KÉP -->
 
                 <div class="card">
 
@@ -1205,13 +1281,11 @@
                         alt="Letölthető kép 4"
                     >
 
-
                     <div class="card-content">
 
                         <h3>
                             Macsesz a hiper DJ
                         </h3>
-
 
                         <p>
                             Macsesz, a hiper DJ,
@@ -1220,7 +1294,6 @@
                         </p>
 
                     </div>
-
 
                     <a
                         class="download-button"
@@ -1239,9 +1312,7 @@
                 </div>
 
 
-                <!-- =================================
-                     5. KÉP
-                ================================== -->
+                <!-- 5. KÉP -->
 
                 <div class="card">
 
@@ -1251,7 +1322,6 @@
                         alt="Letölthető kép 5"
                     >
 
-
                     <div class="card-content">
 
                         <h3>
@@ -1259,14 +1329,12 @@
                             zenéket játszik
                         </h3>
 
-
                         <p>
                             Itt a brutálisan jó DJ,
                             Macsesz!
                         </p>
 
                     </div>
-
 
                     <a
                         class="download-button"
@@ -1285,9 +1353,7 @@
                 </div>
 
 
-                <!-- =================================
-                     6. KÉP
-                ================================== -->
+                <!-- 6. KÉP -->
 
                 <div class="card">
 
@@ -1297,13 +1363,11 @@
                         alt="Letölthető kép 6"
                     >
 
-
                     <div class="card-content">
 
                         <h3>
                             Macsesz a király
                         </h3>
-
 
                         <p>
                             Töltsd le Macsesz PRO DJ
@@ -1312,7 +1376,6 @@
                         </p>
 
                     </div>
-
 
                     <a
                         class="download-button"
@@ -1331,9 +1394,7 @@
                 </div>
 
 
-                <!-- =================================
-                     7. KÉP
-                ================================== -->
+                <!-- 7. KÉP -->
 
                 <div class="card">
 
@@ -1343,13 +1404,11 @@
                         alt="Letölthető kép 7"
                     >
 
-
                     <div class="card-content">
 
                         <h3>
                             Macsesz fej rajzolt
                         </h3>
-
 
                         <p>
                             Töltsd le Macsesz
@@ -1357,7 +1416,6 @@
                         </p>
 
                     </div>
-
 
                     <a
                         class="download-button"
@@ -1375,6 +1433,82 @@
 
                 </div>
 
+
+            </div>
+
+        </section>
+
+
+        <!-- ====================================
+             CHANNEL
+        ===================================== -->
+
+        <section
+            class="channel-section"
+            id="channel"
+        >
+
+            <div class="channel-container">
+
+                <h2 class="fade-text">
+                    Channel
+                </h2>
+
+                <p class="fade-text">
+                    Nézd meg Macsesz YouTube csatornáját!
+                    <br>
+                    Eddig <strong>2 videó</strong> van fenn.
+                </p>
+                <p class="fade-text">
+                    És <strong> 7 Lejátszási lista</strong> </p>
+
+
+                <!--
+                    EZT AZ EGÉSZ KÁRTYÁT MEG LEHET NYOMNI.
+                    A LINKET ITT CSERÉLD KI A SAJÁT
+                    YOUTUBE CSATORNÁD LINKJÉRE!
+                -->
+
+                <a
+                    class="channel-card"
+                    href="https://www.youtube.com/@macsesz_az_igazi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+
+                    <!--
+                        A KÉP NEVE:
+                        channel.png
+
+                        Tedd ezt a képet ugyanabba
+                        a mappába, mint ezt a HTML fájlt.
+                    -->
+
+                    <img
+                        class="channel-image"
+                        src="channel.png"
+                        alt="Macsesz YouTube Channel"
+                    >
+
+
+                    <h3>
+                        Macsesz Channel
+                    </h3>
+
+
+                    <p>
+                        Eddig 2 videó, 7 lejátszási lista van fenn!
+                        <br>
+                        Kattints ide és nézd meg
+                        a YouTube csatornát!
+                    </p>
+
+
+                    <span class="channel-button">
+                        ▶ YOUTUBE CHANNEL
+                    </span>
+
+                </a>
 
             </div>
 
@@ -1412,21 +1546,23 @@
                 <h3 class="fade-text">
                     Itt a nagy lehetőség!
                 </h3>
+
+
                 <div class="copy-box">
 
-    <span id="copyText">
-        macsesz.yt@gmail.com
-    </span>
+                    <span id="copyText">
+                        macsesz.yt@gmail.com
+                    </span>
 
-    <button
-        class="copy-button"
-        onclick="copyText()"
-        title="Másolás"
-    >
-        📋
-    </button>
+                    <button
+                        class="copy-button"
+                        onclick="copyEmail()"
+                        title="Másolás"
+                    >
+                        📋
+                    </button>
 
-</div>
+                </div>
 
             </div>
 
@@ -1442,6 +1578,7 @@
 
     <script>
 
+
         /* ======================================
            MENÜ ELEMEK
         ====================================== */
@@ -1449,10 +1586,8 @@
         const menuButton =
             document.getElementById("menuButton");
 
-
         const sideMenu =
             document.getElementById("sideMenu");
-
 
         const overlay =
             document.getElementById("overlay");
@@ -1602,10 +1737,6 @@
             );
 
 
-        /* ======================================
-           ÖSSZES KÁRTYA FIGYELÉSE
-        ====================================== */
-
         cards.forEach(
             (card) => {
 
@@ -1659,10 +1790,6 @@
             );
 
 
-        /* ======================================
-           ÖSSZES FADE-TEXT FIGYELÉSE
-        ====================================== */
-
         fadeTexts.forEach(
             (text) => {
 
@@ -1671,26 +1798,41 @@
             }
         );
 
-function copyText() {
 
-    const text =
-        document.getElementById("copyText").innerText;
+        /* ======================================
+           EMAIL MÁSOLÁSA
+        ====================================== */
 
-    navigator.clipboard.writeText(text)
-        .then(() => {
+        function copyEmail() {
 
-            alert("A szöveg kimásolva!");
+            const text =
+                document
+                    .getElementById("copyText")
+                    .innerText
+                    .trim();
 
-        })
-        .catch(() => {
 
-            alert("Nem sikerült kimásolni.");
+            navigator.clipboard
+                .writeText(text)
 
-        });
+                .then(() => {
 
-}
+                    alert(
+                        "Az e-mail cím kimásolva!"
+                    );
 
-        
+                })
+
+                .catch(() => {
+
+                    alert(
+                        "Nem sikerült kimásolni."
+                    );
+
+                });
+
+        }
+
 
     </script>
 
